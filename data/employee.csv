@@ -1,0 +1,6 @@
+id,avatar_file_name,tracker_id,first_name,middle_name,last_name,email,phone,driver_license_number,driver_license_cats,driver_license_issue_date,driver_license_valid_till,hardware_key,department_id,location.lat,location.lng,location.address,location.radius,personnel_number,icon_id
+155,e11dca3227e9169edaee9881607346ab.png,,Rahul,,Adenauer,crhis.adenauer@navixy.com,41578994110,YTS0823139B,,,2027-08-10,,195,50.93722904,7.08068848,"Lehmbacher Weg 130A, 51109 Köln, Germany",150.0,,
+156,1937683bd6d62d30b311a45570d3f01d.jpeg,,Michael,,Zumthor,michael.zumthor@navixy.com,41578112457,JYR9237081S,,,2024-07-25,,196,50.91212542,6.68861389,"Erftstraße 174, 50170 Kerpen, Germany",150.0,,
+2183,a755d6d8d01351c653502fb82f83b33b.jpeg,,Samantha   Beckett  ,,,ann.beckett@navixy.com,4564234671,EU5903490TR,,,,,194,,,,,,
+2184,9c41cd706e7ebba3322c0d994707b5b4.png,,Paul,,Anderson,paul.anderson@navixy.com,343234555434,,,,,,195,,,,,,
+70333,,877767.0,John Smith    ,,,,,,,,,123,195,,,,,,5.0

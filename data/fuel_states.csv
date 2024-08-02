@@ -1,0 +1,17 @@
+update_time,success,label,units,name,type,min_value,max_value,value,units_type,converted_units_type,converted_value,tracker_id
+2022-07-13 08:26:01,True,Fuel,,lls_level_1,fuel,11.0,15.0,15.0,litre,,,877766
+2022-10-05 03:49:09,True,LLS: Level #1,,lls_level_1,fuel,0.0,10.0,797.17,litre,,,877767
+2022-06-15 20:10:37,True,LLS: Level #1,,lls_level_1,fuel,,,227.4,litre,,,877768
+,True,OBD: Fuel,,obd_fuel,fuel,,,,percent,,,3036043
+,True,,,,,,,,,,,3036045
+,True,,,,,,,,,,,3036047
+,True,,,,,,,,,,,3036049
+2024-07-23 04:07:21,True,OBD: Fuel,,obd_fuel,fuel,,,48.0,percent,,,3036056
+2024-07-23 00:39:56,True,CAN: Fuel (litres),L,can_fuel_litres,fuel,,,695.0,litre,,,3036057
+,True,,,,,,,,,,,3036059
+,True,,,,,,,,,,,3036060
+,True,,,,,,,,,,,1228833
+2024-07-23 04:09:17,True,OBD: Real Fuel (litres),,obd_custom_fuel_litres,fuel,,,20.4,litre,,,3036068
+2024-07-23 03:54:17,True,CAN: Fuel (litres),,can_fuel_litres,fuel,,,927.0,litre,,,3036069
+,True,,,,,,,,,,,3036070
+,True,,,,,,,,,,,3036071
