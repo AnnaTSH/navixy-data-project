@@ -4,6 +4,6 @@ After reading the [Navixy API description](https://developers.navixy.com/backend
 
 I show the way I requested the data in the [get_data notebook](get_data.ipynb)
 
-Unfortunately, the data on the available trackers is insufficient: 
+I first obtained the list of all available trackers and their current states. The attributes of interest for visualization are: connection_status, movement_status, last_update, latitude, and longitude. Interestingly, only one of the trackers turned out to be active; the others' last update date was 2024-07-23. I also tried to collect information on drivers, vehicles, fuel levels, sensor readings, and inputs. However, most of the data is partial and therefore not valuable for visualization.
 
-That's why I decided to use the tracks data to provide more information about the fleet on the dashboard. I conducted a short research and performed transformations to obtain the main statistics on the trackers' activity for the last month. Tracks data is available for only 14 out of the 16 trackers of the user.
+That's why I decided to use the tracks data to provide more information about the fleet on the dashboard. Although track data is available for only 14 out of 16 trackers, it allows for a detailed view of tracker activity: the number of tracks per day, duration, distance traveled (to be compared with mileage, accessed through /tracker/stats/mileage endpoint), idle time, and average speed. I conducted a short research and performed transformations to obtain the main statistics on the trackers' activity for the last month (2024-06-24 to 2024-07-24). 

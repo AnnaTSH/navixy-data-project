@@ -1,17 +1,17 @@
-success,status.code,status.description,tracker_id
-False,112,Wrong method: 'get_last_gps_point',877766
-False,112,Wrong method: 'get_last_gps_point',877767
-False,112,Wrong method: 'get_last_gps_point',877768
-False,112,Wrong method: 'get_last_gps_point',3036043
-False,112,Wrong method: 'get_last_gps_point',3036045
-False,112,Wrong method: 'get_last_gps_point',3036047
-False,112,Wrong method: 'get_last_gps_point',3036049
-False,112,Wrong method: 'get_last_gps_point',3036056
-False,112,Wrong method: 'get_last_gps_point',3036057
-False,112,Wrong method: 'get_last_gps_point',3036059
-False,112,Wrong method: 'get_last_gps_point',3036060
-False,112,Wrong method: 'get_last_gps_point',1228833
-False,112,Wrong method: 'get_last_gps_point',3036068
-False,112,Wrong method: 'get_last_gps_point',3036069
-False,112,Wrong method: 'get_last_gps_point',3036070
-False,112,Wrong method: 'get_last_gps_point',3036071
+success,value.lat,value.lng,value.satellites,value.get_time,value.heading,value.speed,tracker_id,value.alt
+True,40.66334,-73.81861,10,2024-07-23 04:10:01,99,52,877766,
+True,43.1537816667,-78.5195166667,10,2024-07-23 04:09:59,336,49,877767,
+True,51.371815,12.21689,10,2024-07-23 04:10:01,176,55,877768,
+True,35.125748,-89.953146,10,2024-07-23 04:09:21,45,0,3036043,
+True,30.328325,-97.720808,10,2024-07-23 04:09:50,45,0,3036045,
+True,38.133215,-85.7689033333,10,2024-07-23 04:09:12,45,0,3036047,
+True,37.7801766667,-122.4674633333,10,2024-07-23 04:09:56,45,0,3036049,
+True,25.725968,-100.278333,10,2024-07-23 04:09:26,45,0,3036056,
+True,22.157007,-100.957408,10,2024-07-23 04:09:47,45,0,3036057,
+True,20.9606833333,-89.5676933333,10,2024-07-23 04:09:16,45,0,3036059,
+True,19.358055,-99.1756733333,10,2024-07-23 04:09:57,45,0,3036060,
+True,49.30779,8.4480583,15,2024-08-02 17:17:48,121,0,1228833,104.0
+True,52.183298,21.184641,10,2024-07-23 04:09:17,45,0,3036068,
+True,49.781564,10.213127,10,2024-07-23 04:09:22,45,0,3036069,
+True,48.2271,16.4295066667,10,2024-07-23 04:09:06,45,0,3036070,
+True,45.08021,7.7822866667,10,2024-07-23 04:10:01,45,0,3036071,

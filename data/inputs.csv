@@ -10,7 +10,7 @@ update_time,inputs,success,tracker_id,type,name,status,input_number
 2024-07-23 04:09:47,"[False, False, False, False, False]",True,3036057,ignition,Ignition,False,1.0
 2024-07-23 04:11:54,"[False, False, False]",True,3036059,ignition,Ignition,False,2.0
 2024-07-23 04:12:52,[],True,3036060,,,,
-2024-08-01 15:38:45,"[False, False, False, False]",True,1228833,ignition,Zündung AN,False,4.0
+2024-08-02 17:16:18,"[False, False, False, False]",True,1228833,ignition,Zündung AN,False,4.0
 2024-07-23 04:09:17,[False],True,3036068,ignition,Ignition,False,1.0
 2024-07-23 04:09:22,"[False, False, False, False, False]",True,3036069,ignition,Ignition,False,5.0
 2024-07-23 04:11:54,"[False, False, False, False]",True,3036070,ignition,Ignition,False,2.0
