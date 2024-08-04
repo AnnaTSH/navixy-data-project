@@ -26,7 +26,13 @@ To get the trackers' states, we first need to obtain all the tracker_ids availab
 
 ![image](api_call_example.jpg)
 
-The states of all trackers are available when the list of tracker IDs is passed. However, one should be aware of different JSON schemas in the response and adjust the Python script to transform the data accordingly. The attributes of interest for visualization are: 
+The states of all trackers are available when the list of tracker IDs is passed. However, one should be aware of different JSON schemas in the response and adjust the Python script to transform the data accordingly.
+
+![image](api_call_example2.jpg)
+
+The response JSON is described at [Navixy Developer Hub](https://developers.navixy.com/backend-api/resources/tracking/tracker/#get_states) and the full data saved in [trackers_states.csv](../data/trackers_states.csv).
+
+The attributes of interest for visualization are: 
 - connection_status,
 - movement_status,
 - latitude, and
