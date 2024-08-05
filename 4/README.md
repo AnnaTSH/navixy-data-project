@@ -105,6 +105,13 @@ The dashboard allows selecting multiple trackers (using **Ctrl** key on the keyb
 
 When several trackers are selected, their aggregated data is displayed in the table. This allows for comparison of measurements over a specific date range, reordering the results differently, and observing daily totals for the entire group on the line chart.
 
+The dashboard allows the fleet manager to answer the following questions: Where was a particular tracker (vehicle) at the time of the last update? What is its movement status? How many vehicles in the fleet have a particular status?
+What are the average (speed) and total indicators for the last month for the entire fleet or subgroups of vehicles or individual vehicles?
+Which vehicle made the maximum/minimum number of trips, traveled the maximum distance, had the maximum average speed during the month or a certain week? Which vehicle was idle the most?
+The answers to these questions will allow the fleet manager to optimize the use of vehicles (too much idle time is a reason to think about assigning an additional employee to the same vehicle), pay attention to too low (the vehicle is not used efficiently enough) or too high (threatens road safety) average speed.
+
+### Dashboard embedding
+
 When the dashboard was ready in my Power BI Desktop, I published it to Power BI ([see instructions here](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files)).
 Then I needed to [obtain the embed link](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-publish-to-web) to embed the dashboard into my newly created GitHub web page ([instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) for [pages.github.com](https://pages.github.com/)).
 
