@@ -57,9 +57,27 @@ That's why I decided to use the [tracks data](https://developers.navixy.com/back
 - off-track (idle) time, and
 - average speed. 
 
-I conducted a short research and performed transformations to obtain the main statistics on the trackers' activity for the last month (2024-06-23 to 2024-07-23). See the [track_calculations](track_calculations.ipynb) notebook. The main challenge I faced was separating tracks that spanned more than one day into two parts. However, using the duration data and accurately calculated average speed for each track, I was able to determine the distance traveled for tracks spanning two days, broken down by each day.
+I conducted exploratory data analysis and performed transformations to obtain the main statistics on the trackers' activity for the last month (2024-06-23 to 2024-07-23). See the [track_calculations](track_calculations.ipynb) notebook. 
+
+Exploratory data analysis showed that, unfortunately, the data on fuel consumption is partial (available for only 2 out of 14 vehicles); therefore, there's no sense in visualizing it. There are 2 dates for which the data on tracks is missing completely. Several reasons could explain this: the data was corrupted and deleted, the data was not recorded appropriately, or there were more than two full days off for all drivers in the company (highly unlikely). We should explicitly add information on no tracks completed during this period to the aggregated data.
+
+I visualized the values distribution for different trackers side by side, which allowed to spot abnormal data (see the second histogram, showing significant deviation from the normal distribution). I noticed that two of the abnormal data subsets featured tracks with the same start and end addresses (69% and 79% of all tracks).
+
+![image](eda_histograms.jpg)
+
+Calculations of the average length, duration, speed, and number of tracks for each tracker further confirmed the anomalies in the data from trackers 3036045, 3036057, and 3036069.
+
+![image](eda_averages.jpg)
+
+When aggregating data the main challenge I faced was separating tracks that spanned more than one day into two parts. However, using the duration data and accurately calculated average speed for each track, I was able to determine the distance traveled for tracks spanning two days, broken down by each day.
 
 I compared the aggregated distances and mileage from the mileage endpoint and found discrepancies between the daily distances traveled and the daily mileage for each tracker. On days with discrepancies, the end address of one track and the start address of the next track don't always match, indicating some vehicle travels may not be recorded as tracks. I decided that mileage data would be redundant and unnecessary for this specific dashboard.
+
+When calculating averages for aggregated data I noticed that apart from the previously identified abnormal trackers (3036045, 3036057, and 3036069), there are three other trackers that stand out due to their mean daily duration and length (877766, 877767, 877768). This is likely because the same vehicle (and tracker) is used by two different drivers each day.
+
+![image](agg_averages.jpg)
+
+Since the dashboard would allow for aggregating data by specific groups of trackers and would also provide overall metrics, I decided to remove the abnormal data from three trackers discussed earlier and checked the whole aggregated dataset for missing data. Not only there were 2 dates, when tracks data was missing completely, but also there were 6 trackers that missed data for 3 other days of July. I added zero length, duration, average speed and 24 hours of off-track time for those days.
 
 The datasets used for the dashboard are:
 
@@ -74,6 +92,10 @@ The dashboard enables the fleet manager to view the current status of each track
 ![image](dashboard_selection.jpg)
 
 The dashboard allows selecting multiple trackers (using **Ctrl** key on the keyboard) by clicking on the map, selecting trackers by vehicle status, or choosing the Tracker Labels from the list. The manager can observe the main statistics for individual trackers or aggregated for several trackers in a table format and as a line chart by selecting the date range.
+
+![image](dashboard_compare.jpg)
+
+When several trackers are selected, their aggregated data is displayed in the table. This allows for comparison of measurements over a specific date range, reordering the results differently, and observing daily totals for the entire group on the line chart.
 
 When the dashboard was ready in my Power BI Desktop, I published it to Power BI ([see instructions here](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files)).
 Then I needed to [obtain the embed link](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-publish-to-web) to embed the dashboard into my newly created GitHub web page ([instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) for [pages.github.com](https://pages.github.com/)).
