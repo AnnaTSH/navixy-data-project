@@ -65,9 +65,11 @@ I conducted exploratory data analysis and performed transformations to obtain th
 
 Exploratory data analysis showed that, unfortunately, the data on fuel consumption is partial (available for only 2 out of 14 vehicles); therefore, there's no sense in visualizing it. There are 2 dates for which the data on tracks is missing completely. Several reasons could explain this: the data was corrupted and deleted, the data was not recorded appropriately, or there were more than two full days off for all drivers in the company (highly unlikely). We should explicitly add information on no tracks completed during this period to the aggregated data.
 
-I visualized the values distribution for different trackers side by side, which allowed to spot abnormal data (see the second histogram, showing significant deviation from the normal distribution). I noticed that two of the abnormal data subsets featured tracks with the same start and end addresses (69% and 79% of all tracks).
+I visualized the values distribution for different trackers side by side, which allowed to spot abnormal data (see the second histogram, showing significant deviation from the normal distribution. NOTE: full visualization of 14 trackers' data see in the notebook [track_calculations](track_calculations.ipynb)). 
 
 ![image](eda_histograms.jpg)
+
+I also noticed that two of the abnormal data subsets featured tracks with the same start and end addresses (69% and 79% of all tracks).
 
 Calculations of the average length, duration, speed, and number of tracks for each tracker further confirmed the anomalies in the data from trackers 3036045, 3036057, and 3036069.
 
