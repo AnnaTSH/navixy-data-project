@@ -85,6 +85,8 @@ When calculating averages for aggregated data I noticed that apart from the prev
 
 Since the dashboard would allow for aggregating data by specific groups of trackers and would also provide overall metrics, I decided to remove the abnormal data from three trackers discussed earlier and checked the whole aggregated dataset for missing data. Not only there were 2 dates, when tracks data was missing completely, but also there were 6 trackers that missed data for 3 other days of July. I added zero length, duration, average speed and 24 hours of off-track time for those days.
 
+### The Dashboard
+
 The datasets used for the dashboard are:
 
 - [tracker_label.csv](../data/tracker_label.csv): Contains names for each tracker (driver's name and vehicle).
