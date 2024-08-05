@@ -10,7 +10,7 @@ Create a dashboard for any BI tool (Power BI, SuperSet, Metabase, etc.) with sig
 
 ### Solution:
 
-After reading the [Navixy API description](https://developers.navixy.com/backend-api/getting-started/), I performed a series of API calls using Python to collect the most relevant information on the trackers (Navixy key entity, tracking device registered in our GPS monitoring system) available for the provided key. 
+After reading the [Navixy API description](https://developers.navixy.com/backend-api/getting-started/introduction/), I performed a series of API calls using Python to collect the most relevant information on the trackers (Navixy key entity, tracking device registered in Navixy GPS monitoring system) available for the provided key. 
 
 It is possible to flow data to Power BI directly from the API (**Get data** -> **Web** -> **Advanced**) and transform it using Power Query.
 
@@ -71,9 +71,11 @@ The datasets used for the dashboard are:
 
 The dashboard enables the fleet manager to view the current status of each tracker in the fleet, categorized by connection status: active or offline. It also displays the last update of the vehicle status—whether it is moving, stopped, or parked—along with its location shown on the map.
 
-The dashboard allows selecting multiple trackers (using Ctrl) by clicking on the map, selecting trackers by vehicle status, or choosing the tracker labels from the list. The manager can observe the main statistics for individual trackers or aggregated for several trackers in a table format and as a line chart by selecting the date range.
+![image](dashboard_selection.jpg)
+
+The dashboard allows selecting multiple trackers (using **Ctrl** key on the keyboard) by clicking on the map, selecting trackers by vehicle status, or choosing the Tracker Labels from the list. The manager can observe the main statistics for individual trackers or aggregated for several trackers in a table format and as a line chart by selecting the date range.
 
 When the dashboard was ready in my Power BI Desktop, I published it to Power BI ([see instructions here](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files)).
 Then I needed to [obtain the embed link](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-publish-to-web) to embed the dashboard into my newly created GitHub web page ([instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) for [pages.github.com](https://pages.github.com/)).
 
-See the embedded dashboard through the link above: [annatsh.github.io/dashboard](https://annatsh.github.io/dashboard/).
+See the embedded dashboard through the following link: [annatsh.github.io/dashboard](https://annatsh.github.io/dashboard/).
