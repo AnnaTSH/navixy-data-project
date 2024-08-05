@@ -20,6 +20,8 @@ However, I find working with Python to be more flexible for exploring available 
 
 ![image](navixy_dataflow.drawio.png)
 
+### Data Extraction:
+
 Let me highlight a few moments from the process of requesting the data from the Navixy API, as described in the [get_data](get_data.ipynb) notebook. 
 
 To get the trackers' states, we first need to obtain all the tracker_ids available for the key. The only needed libraries are pandas, json and requests.
@@ -55,7 +57,9 @@ That's why I decided to use the [tracks data](https://developers.navixy.com/back
 - duration (calculated based on start/end timestamps),
 - distance traveled (to be compared with mileage, accessed through [/tracker/stats/mileage](https://developers.navixy.com/backend-api/resources/tracking/tracker/stats/stats_mileage/) endpoint),
 - off-track (idle) time, and
-- average speed. 
+- average speed.
+
+### EDA, Data Aggregation, Cleaning, and Missing Value Management:
 
 I conducted exploratory data analysis and performed transformations to obtain the main statistics on the trackers' activity for the last month (2024-06-23 to 2024-07-23). See the [track_calculations](track_calculations.ipynb) notebook. 
 
