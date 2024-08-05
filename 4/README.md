@@ -61,7 +61,7 @@ That's why I decided to use the [tracks data](https://developers.navixy.com/back
 
 ### EDA, Data Aggregation, Cleaning, and Missing Value Management:
 
-I conducted exploratory data analysis and performed transformations to obtain the main statistics on the trackers' activity for the last month (2024-06-23 to 2024-07-23). See the [track_calculations](track_calculations.ipynb) notebook. 
+I conducted exploratory data analysis and performed transformations to obtain the main statistics on the trackers' activity for the last month (2024-06-24 to 2024-07-23). See the [track_calculations](track_calculations.ipynb) notebook. 
 
 Exploratory data analysis showed that, unfortunately, the data on fuel consumption is partial (available for only 2 out of 14 vehicles); therefore, there's no sense in visualizing it. There are 2 dates for which the data on tracks is missing completely. Several reasons could explain this: the data was corrupted and deleted, the data was not recorded appropriately, or there were more than two full days off for all drivers in the company (highly unlikely). We should explicitly add information on no tracks completed during this period to the aggregated data.
 
