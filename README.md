@@ -11,3 +11,7 @@ You work for a company that manages a vehicle fleet. You have a real-time monito
 ### You need to:
 
 Create a dashboard for any BI tool (Power BI, SuperSet, Metabase, etc.) with significant information that will be useful to the fleet manager. So that the created dashboard is located (embedded) on a separate WEB resource.
+
+### Solution:
+
+[See Project ReadMe](https://github.com/AnnaTSH/navixy-data-project/tree/main/4#readme)
